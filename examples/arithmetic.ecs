@@ -1,0 +1,10 @@
+// Checked integer arithmetic and local bindings.
+fn arithmetic(a, b) {
+    let sum = a + b;
+    let product = a * b;
+    return sum + product;
+}
+
+fn entry() {
+    return arithmetic(6, 7);
+}
