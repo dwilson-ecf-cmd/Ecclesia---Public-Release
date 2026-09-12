@@ -1,0 +1,15 @@
+// Lexical blocks may shadow bindings without changing the outer binding.
+fn choose(value) {
+    let threshold = 10;
+    {
+        let threshold = 20;
+        if (value >= threshold) {
+            return value;
+        }
+    }
+    return threshold;
+}
+
+fn entry() {
+    return choose(24);
+}
