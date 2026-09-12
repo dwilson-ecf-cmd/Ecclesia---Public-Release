@@ -1,0 +1,17 @@
+// R0 conditions are explicit comparisons; integers are not implicit booleans.
+fn absolute_difference(a, b) {
+    if (a >= b) {
+        return a - b;
+    } else {
+        return b - a;
+    }
+}
+
+fn entry() {
+    let distance = absolute_difference(84, 126);
+    if (distance == 42) {
+        return distance;
+    } else {
+        return 0;
+    }
+}
