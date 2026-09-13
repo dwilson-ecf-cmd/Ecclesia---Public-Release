@@ -1,0 +1,17 @@
+// Fixed-arity calls compose through explicit, deterministic value flow.
+fn add(a, b) {
+    return a + b;
+}
+
+fn scale(value, factor) {
+    return value * factor;
+}
+
+fn adjust(value) {
+    let shifted = add(value, 5);
+    return scale(shifted, 3);
+}
+
+fn entry() {
+    return adjust(9);
+}
