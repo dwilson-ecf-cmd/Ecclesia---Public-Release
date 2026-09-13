@@ -1,0 +1,9 @@
+// Division participates in the same checked-arithmetic execution contract.
+fn average_pair(a, b) {
+    let total = a + b;
+    return total / 2;
+}
+
+fn entry() {
+    return average_pair(40, 44);
+}
