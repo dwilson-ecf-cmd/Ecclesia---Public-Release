@@ -1,0 +1,18 @@
+// Nested lexical scopes may shadow names without mutating outer bindings.
+fn nested(value) {
+    let result = value;
+    {
+        let result = value + 10;
+        {
+            let result = value + 20;
+            if (result == 42) {
+                return result;
+            }
+        }
+    }
+    return result;
+}
+
+fn entry() {
+    return nested(22);
+}

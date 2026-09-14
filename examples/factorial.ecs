@@ -1,0 +1,12 @@
+// Recursive arithmetic remains deterministic and uses explicit execution frames.
+fn factorial(n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+fn entry() {
+    return factorial(6);
+}

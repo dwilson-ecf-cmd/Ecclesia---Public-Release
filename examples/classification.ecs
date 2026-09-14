@@ -1,0 +1,16 @@
+// Comparison conditions are explicit and drive deterministic branch selection.
+fn classify(value) {
+    if (value < 10) {
+        return 10;
+    } else {
+        if (value == 10) {
+            return 20;
+        } else {
+            return 30;
+        }
+    }
+}
+
+fn entry() {
+    return classify(42);
+}
