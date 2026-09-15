@@ -12,6 +12,6 @@ fn adjust(value) {
     return scale(shifted, 3);
 }
 
-fn entry() {
+fn main() {
     return adjust(9);
 }

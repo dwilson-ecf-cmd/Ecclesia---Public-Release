@@ -7,6 +7,6 @@ fn triangular(n) {
     }
 }
 
-fn entry() {
+fn main() {
     return triangular(12);
 }

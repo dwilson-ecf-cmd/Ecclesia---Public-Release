@@ -7,7 +7,7 @@ fn absolute_difference(a, b) {
     }
 }
 
-fn entry() {
+fn main() {
     let distance = absolute_difference(84, 126);
     if (distance == 42) {
         return distance;

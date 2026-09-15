@@ -10,6 +10,6 @@ fn choose(value) {
     return threshold;
 }
 
-fn entry() {
+fn main() {
     return choose(24);
 }

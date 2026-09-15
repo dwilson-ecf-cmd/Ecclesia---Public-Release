@@ -4,6 +4,6 @@ fn average_pair(a, b) {
     return total / 2;
 }
 
-fn entry() {
+fn main() {
     return average_pair(40, 44);
 }

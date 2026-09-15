@@ -7,6 +7,6 @@ fn factorial(n) {
     }
 }
 
-fn entry() {
+fn main() {
     return factorial(6);
 }
