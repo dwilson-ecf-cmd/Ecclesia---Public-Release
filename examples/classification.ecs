@@ -11,6 +11,6 @@ fn classify(value) {
     }
 }
 
-fn entry() {
+fn main() {
     return classify(42);
 }
