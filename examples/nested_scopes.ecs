@@ -13,6 +13,6 @@ fn nested(value) {
     return result;
 }
 
-fn entry() {
+fn main() {
     return nested(22);
 }
