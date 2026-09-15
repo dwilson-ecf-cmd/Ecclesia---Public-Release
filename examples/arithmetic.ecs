@@ -5,6 +5,6 @@ fn arithmetic(a, b) {
     return sum + product;
 }
 
-fn entry() {
+fn main() {
     return arithmetic(6, 7);
 }
