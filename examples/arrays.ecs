@@ -1,0 +1,6 @@
+// Fixed-size arrays have explicit element types and zero-based indices.
+fn main() {
+    let values: [u8; 4] = [10, 20, 30, 40];
+    values[2] = 42;
+    return values[2];
+}
