@@ -1,0 +1,15 @@
+// Functions, integer types and structured iteration.
+fn sum_to(limit: i32) -> i32 {
+    let total: i32 = 0;
+    let n: i32 = 1;
+
+    while (n <= limit) {
+        total = total + n;
+        n = n + 1;
+    }
+    return total;
+}
+
+fn main() {
+    return sum_to(7);
+}
